@@ -1,0 +1,204 @@
+/*
+    ALLGEMEINE DEKORIERUNG
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --color: #B22222;
+    --color_hover: #FF0000;
+    --main: #2B2B2B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(244, 244, 244);
+}
+
+body {
+    background-color: var(--main);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: var(--color);
+}
+
+a:hover {
+    color: var(--color_hover);
+}
+
+.content {
+    background-color: var(--main);
+}
+
+::-moz-selection {
+    background: var(--color);
+  }
+  
+  ::selection {
+    background: var(--color);
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--main); 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: var(--color); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color_hover); 
+  }
+
+  
+
+/*
+    NAVBAR
+*/
+
+.navbar {
+    margin-top: 2%;
+    background-color: var(--main);
+}
+
+.navbar nav {
+    text-align: center;
+    display: block;
+}
+
+.navbar a {
+    margin-top: 5%;
+    margin-right: 5%;
+    color: white;
+    transition: 500ms;
+    font-size: 17.5px;
+    border: solid rgb(0,0,0,0.0) 1px;
+    border-radius: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.navbar a:hover {
+    border-left: solid var(--color) 1px;
+    border-right: solid var(--color) 1px;
+    border-top: solid var(--color) 1px;
+    border-bottom: solid var(--color) 1px;
+    background-color: var(--color);
+    border-radius: 13px;
+    border-width: -3px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+/*
+    MAIN
+*/
+
+/*
+.main {
+
+}
+*/
+
+/*
+    FOOTER
+*/
+
+footer {
+    margin-top: 2%;
+    text-align: center;
+    background-color: #1B1C1E;
+}
+
+.footer-header {
+    display: inline-table;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.footer-header:not(:first-child):not(:last-child) {
+    margin-left: 3%;
+}
+
+
+/*
+    INDEX.HTML
+*/
+
+.main #start {
+    margin-top: 9%;
+    font-size: 55px;
+}
+
+.main #start img {
+    display:inline-block;
+    margin-top: -10%;
+    margin-left: 70%;
+    z-index: -1;
+}
+
+/*
+    SHOP.HTML
+*/
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 2%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-bottom: 5%;
+}
+
+.box .product {
+    margin: auto;
+    width: 90%;
+    width: 90%;
+    transition: 500ms;
+    border: solid var(--color) 2px;
+    border-radius: 13px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.box .product #header {
+    font-weight: bold;
+    font-size: 17.5px;
+}
+
+.box .product #description {
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
+    font-size: 17.5px;
+    word-break: break-all;
+}
+
+.box .product #price {
+    padding-top: 1%;
+    font-size: 17.5px;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.box .product:hover {
+    background-color: rgba(16,16,16,0.8);
+}
